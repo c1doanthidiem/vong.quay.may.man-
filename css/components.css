@@ -560,3 +560,61 @@ button {
     font-size: 14px;
   }
 }
+/* Đồng bộ giao diện 3 ô thông tin */
+#playerForm .player-fields {
+  display: grid !important;
+  grid-template-columns: 1.5fr 0.8fr 1fr !important;
+  gap: 12px !important;
+  width: 100%;
+  margin-bottom: 12px;
+  align-items: end;
+}
+
+#playerForm .field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  min-width: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#playerForm .field-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#playerForm .field-group input,
+#playerForm .field-group select {
+  display: block;
+  width: 100% !important;
+  min-width: 0;
+  height: 48px !important;
+  box-sizing: border-box !important;
+  padding: 0 12px !important;
+  border: 1px solid #d5dce5 !important;
+  border-radius: 11px !important;
+  background: #fff !important;
+  color: #17324d;
+  font-family: inherit;
+  font-size: 16px !important;
+}
+
+#playerForm .field-group input:focus,
+#playerForm .field-group select:focus {
+  outline: none;
+  border-color: #1261A0 !important;
+  box-shadow: 0 0 0 3px rgba(18, 97, 160, 0.12);
+}
+
+@media (max-width: 600px) {
+  #playerForm .player-fields {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #playerForm .field-group:first-child {
+    grid-column: 1 / -1;
+  }
+}
