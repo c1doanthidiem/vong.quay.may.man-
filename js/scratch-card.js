@@ -108,9 +108,9 @@ window.QRScratchCard = {
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.font = "700 17px Arial, sans-serif";
-      ctx.fillText("BÓC TEM ĐỂ MỞ QUÀ", w / 2, h / 2 - 10);
+      ctx.fillText("BÓC TEM GÓC BÊN PHẢI ĐỂ MỞ QUÀ", w / 2, h / 2 - 10);
       ctx.font = "13px Arial, sans-serif";
-      ctx.fillText("Giữ và kéo góc tem", w / 2, h / 2 + 17);
+      ctx.fillText("Giữ và kéo từ góc bên phải xuống để bóc tem", w / 2, h / 2 + 17);
       ctx.restore();
 
       // Góc tem cuộn và bóng đổ
